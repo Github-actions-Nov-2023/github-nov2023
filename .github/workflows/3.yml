@@ -12,7 +12,7 @@ jobs:
           node -v
           npm -v
           df -h
-    parallel-job-Ubuntu 22.04:
+  parallel-job-Ubuntu:
     runs-on: ubuntu-22.04
     steps:
       - name: Memory 
