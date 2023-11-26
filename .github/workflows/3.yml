@@ -12,4 +12,9 @@ jobs:
           node -v
           npm -v
           df -h
+    parallel-job-Ubuntu 22.04:
+    runs-on: Ubuntu 22.04
+    steps:
+      - name: Memory 
+        run: free -m
 
