@@ -8,4 +8,5 @@ jobs:
       - run: |
           echo $GITHUB_SHA
           echo $GITHUB_REF
+          echo "Hello World"
       - uses: actions/checkout@v3
