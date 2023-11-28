@@ -26,6 +26,7 @@ on:
         type: boolean
       environment:
         description: "Environment"
+        default: dev
         type: environment
         required: true
 
