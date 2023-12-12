@@ -7,10 +7,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:        
-      - name: Set up Docker
-        uses: docker/setup-docker@v3
-        with:
-          dockerfile: Dockerfile
+      - name: Checkout code
+        uses: actions/checkout@v2
           
       - name: Build Docker image
         run: 'docker build -t your-username/apache-image:latest .'
