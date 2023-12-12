@@ -1,7 +1,5 @@
-FROM ubuntu 
-RUN apt update 
-RUN apt install –y apache2 
-RUN apt install –y apache2-utils 
-RUN apt clean 
+FROM centos
+RUN yum install httpd -y
+
+CMD [“/usr/sbin/httpd”,” -D”,” FOREGROUND”]
 EXPOSE 80
-CMD [“apache2ctl”, “-D”, “FOREGROUND”]
